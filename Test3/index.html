@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Inventory</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div id="catalog">
+        <div id="booklist" class="container">
+        </div>
+        <div class="buttons">
+            <button id="addabook">Add</button>
+            <button id="editabook">Edit</button>
+            <button id="deleteabook">Delete</button>
+            <button id="sortbooks">Sort</button>
+            <button id="groupby">Group By</button>
+
+        </div>
+    </div>
+    <div id="addone" class="hidden">
+        <div class="entry">
+            <div class="element">
+                <input id="title" type="text" />
+            </div>
+            <div class="element">
+                <input id="author" type="text" />
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="addOk">add</button>
+            
+            <button id="deleteOk">delete</button>
+
+        </div>
+    </div>
+
+    <div id="eidtone" class="hidden">
+        <div class="entry">
+            <div class="element">
+                <label>title</label>
+                <input id="tit" type="text" />
+            </div>
+
+            <div class="element">
+                <label>author</label>
+                <input id="aut" type="text" />
+            </div>
+            <div class="element">
+                <label>price</label>
+                <input id="price" type="text" />
+            </div>
+
+            <div class="element">
+                <label>publish_date</label>
+                <input id="date" type="text" />
+            </div>
+            <div class="element">
+                <label>genre</label>
+                <input id="genre" type="text" />
+            </div>
+            <div class="element">
+                <label>description</label>
+                <input id="description" type="text" />
+            </div>
+        </div>
+        <br>
+        <div class="buttons">            
+            <button id="editOk">edit</button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"
+        integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+        crossorigin="anonymous"></script>    
+    <script src="page.js">
+    </script>
+</body>
+</html>
